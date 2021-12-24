@@ -1,0 +1,67 @@
+.header {
+
+    background-color: $black-bkg;  
+    &_nav-button {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center; 
+    }
+    
+    &__button {
+        background-color: transparent;
+        border: 0;
+    }
+    
+    &__logo-button {
+        margin-right: 40px;
+    }
+    
+    &__profile-button {
+        margin-left: 33px;
+        margin-right: 33px;
+    }
+    
+    &__buttom-image {
+        fill: $white-bkg;
+    }
+    
+    &__buttom-image:hover  {
+        cursor: pointer;
+        fill: #F16D7F;
+    }
+    
+    &__buttom-image:focus {
+        background: $gray-bkg;
+        cursor: pointer;
+    }
+    
+    &__menu {
+        display: none;
+    }
+    
+    &__basket-button{
+        position: relative;
+    
+        & {
+            text-align: center;
+            line-height: 19px;
+        }
+        
+        &::after {
+            background-color: $pink-bkg;
+            border-radius: 10px 10px 10px 10px;
+            content: $basket-number;
+            color: $white-text;
+            height: 19px;
+            width: 19px;
+            position: absolute;
+            top: -4px;
+            right: -1px;
+        }
+    }
+    
+    
+    
+}
+
