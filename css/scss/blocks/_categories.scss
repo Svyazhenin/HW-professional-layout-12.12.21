@@ -3,35 +3,67 @@
     margin: 0px 0px 96px 0px;
 }
 
-.categories_list {
-    display: flex;
+.categories__list {
+    display: grid;
     flex-wrap: wrap;
-
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    
     &-item {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 360px;
         height: 260px;
-    }
-    
-    &-item_women {
-        background-image: url(../img/for_women.jpg);
-    }
-    
-    &-item_men {
-        background-image: url(../img/for_men.jpg);
-        margin: 0px 30px 30px 30px ;
-    }
-    
-    &-item_kids {
-        background-image: url(../img/for_kids.jpg);
-    }
-    
-    &-item_accesories {
-        background-image: url(../img/accesories.jpg);
+        justify-content: center;
         width: 100%;
+
+         &-accesories {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            height: 180px;
+            
+            @include tablet {
+                height: 160px;
+            }
+
+            @include mobile {
+                grid-column-end: 1; 
+                grid-row-start: 4;
+                grid-row-end: 4;
+                height: 111px;
+             }
+        } 
+    }
+    
+    @include mobile {
+        grid-template-columns:repeat(1, 4fr);
+     }
+
+    &-item-women {
+        background-image: url(../img/for_women.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    
+    &-item-men {
+        background-image: url(../img/for_men.jpg);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-size: cover;
+    }
+    
+    &-item-kids {
+        background-image: url(../img/for_kids.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &-item-accesories {
+        background-image: url(../img/accesories.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     &-description {
@@ -41,7 +73,7 @@
         text-transform: uppercase;
     }
     
-    .categories_description-title {
+    .categories__description-title {
         font-size: 24px;
         line-height: 29px;
         color: $pink-text;
