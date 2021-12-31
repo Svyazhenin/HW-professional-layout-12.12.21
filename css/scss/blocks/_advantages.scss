@@ -1,0 +1,40 @@
+.advantages {
+    background-color: $black-bkg;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        height: 341px;
+    }
+       
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__img {
+        width: 45px;
+        height: 32px;
+        margin: 0px 0px 28px 0px;
+    }
+    
+    &__item-title {
+        font-size: 20px;
+        line-height: 24px;
+        color: $white-text;
+        margin: 0px 0px 16px 0px;
+    }
+    
+    &__discription {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: $white-text;
+        text-align: center;
+        opacity: .5;
+        font-weight: 400;
+    }
+    
+}
+

@@ -1,0 +1,170 @@
+.registration-title {
+    background-color: $reg-light-pink-bkg;
+    height: 148px;
+}
+
+.registration-title__text {
+    @include subheader;
+}
+
+.registration-section {
+    .registration-section__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .registration-section__wrap {
+        padding: 64px 0px 96px;
+    }
+    
+    .registration-section__label {
+        display: block;
+    }
+    
+    .registration-section__form {
+        border: none;
+        box-sizing: border-box;
+        outline: 1px solid;
+        width: 360px;
+        height: 45px;
+        padding: 12px 277px 16px 17px;
+        margin: 20px 0px 0px 0px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $reg-text-gray;
+        opacity: 0.8;
+   
+        &:hover {
+            color: $black-bkg;
+        }
+        
+        &:focus {
+            color: $black-bkg;
+        }
+        
+        &-input-title {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        
+        &-radio {
+            margin: 31px 0px 33px;
+        }
+        
+        &-radio-input {
+            display: none;
+        }
+        
+        &-radio-label {
+            position: relative;
+            margin: 0px 20px 0px 27px;
+        }
+        
+        &-radio-label:before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            border: 1px solid #A4A4A4;
+            box-sizing: border-box;
+            position: absolute;
+            left: -27px;
+            border-radius: 100%;
+        }
+        
+        &-radio-input:checked+&-radio-label::after {
+            background-color: $pink-bkg;
+            border-radius: 50%;
+            content: '';
+            height: 12px;
+            left: -24px;
+            position: absolute;
+            top: 2px;  
+            width: 12px;
+        }
+        
+        &-button {
+            background-color: $pink-text;
+            color: $white-text;
+            width: 167px;
+            height: 50px;
+            padding: 18px 66px 17px 29px; 
+            border: none;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        &-button:hover{
+            opacity: 0.8;
+        }
+        
+        &-description {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            font-weight: 300px;
+            color: $reg-text-gray;
+            width: 359px;
+            height: 32px;
+            margin: 15px 0px 39px;
+        }
+        
+        &-button::after {
+            content: url(../img/arrow.svg);
+            position: absolute;
+            margin: 0px 0px 0px 20px;
+        }
+
+    }
+    
+    
+    .registration-section__loyalty {
+
+        &-block {
+            margin: 64px 0px 0px 128px;
+        }
+        
+        &-block-list-title {
+            color: $black-text;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 22px;
+            text-transform: uppercase;
+        }
+        
+        &-block-list-description {
+            color: $black-text;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 21px;
+        }
+        
+        &-block-list-item {
+            padding-left: 39px;
+            color: $black-text;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 16px;
+            position: relative;
+        }
+        
+        &-block-list-item:before {
+            background-image: url(../img/Vector.svg);
+            background-size: 20px 16px;
+            content: '';
+            height: 16px;
+            left: 0;
+            position: absolute;
+            top: 5px;   
+            width: 20px;
+          }
+
+    }
+
+}
