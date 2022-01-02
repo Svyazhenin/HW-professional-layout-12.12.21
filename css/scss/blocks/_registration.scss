@@ -9,20 +9,28 @@
 
 .registration-section {
 
-    .registration-section__list {
+    &__list {
         display: flex;
         justify-content: space-between;
+       
+        @include mobile {
+            display: block;
+        }
     }
     
-    .registration-section__wrap {
+    &__wrap {
         padding: 64px 0px 96px;
+        width: 360px;
+        @include mobile {
+            margin:0 auto;
+        }
     }
     
-    .registration-section__label {
+    &__label {
         display: block;
     }
     
-    .registration-section__form {
+    &__form {
         border: none;
         box-sizing: border-box;
         outline: 1px solid;
@@ -36,6 +44,10 @@
         color: $reg-text-gray;
         opacity: 0.8;
    
+        @include mobile {
+            justify-content: center;
+        }
+
         &:hover {
             color: $black-bkg;
         }
@@ -62,18 +74,33 @@
             position: relative;
             margin: 0px 20px 0px 27px;
         }
-        
-        &-radio-label:before {
-            content: '';
-            width: 18px;
-            height: 18px;
+
+        &-radio-label::before {
             border: 1px solid #A4A4A4;
-            box-sizing: border-box;
-            position: absolute;
-            left: -27px;
             border-radius: 100%;
+            box-sizing: border-box;
+            content: '';
+            height: 18px;
+            left: -27px;
+            position: absolute;
+            width: 18px;
         }
-        
+
+        &-radio-input:hover+&-radio-label::before {
+            border: 1px solid $pink-bkg;
+            border-radius: 100%;
+            box-sizing: border-box;
+            content: '';
+            height: 18px;
+            left: -27px;
+            position: absolute;
+            width: 18px; 
+        }
+
+        &-radio-label:hover {
+            font-weight: 700;
+        }
+
         &-radio-input:checked+&-radio-label::after {
             background-color: $pink-bkg;
             border-radius: 50%;
@@ -122,7 +149,16 @@
     
     .registration-section__loyalty {
         &-block {
-            margin: 64px 0px 0px 128px;
+            margin: 40px 0px 0px 128px;
+
+            @include tablet {
+                margin-left: 5%;
+            }
+            @include mobile {
+                margin: 0 auto;
+                padding-bottom: 100px;
+                width: 358px;
+            }
         }
         
         &-block-list-title {
@@ -140,6 +176,10 @@
             font-size: 24px;
             line-height: 29px;
             margin-bottom: 21px;
+
+            @include tablet {
+                width: 354px;
+            }            
         }
         
         &-block-list-item {

@@ -165,7 +165,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 79px;
+            padding: 43px 0px 9px;
         }
         
         &-text {
@@ -176,6 +176,10 @@
             display: flex;
             width: 155px;
             justify-content: space-between;
+
+            @include mobile {
+                padding: 0;
+            }
         }
         
         &-item{
@@ -203,13 +207,11 @@
         } 
         
         @include tablet {
-            flex-direction: column-reverse;
             padding: 43px 0px 9px;
         }
 
         @include mobile {
             flex-direction: column-reverse;
-            padding: 43px 0px 9px;
         }
     }   
 }
