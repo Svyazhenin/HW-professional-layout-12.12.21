@@ -1,9 +1,22 @@
 .advantages {
     background-color: $black-bkg;
+
     &__list {
         display: flex;
         justify-content: space-around;
-        height: 341px;
+        min-height: 341px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            padding: 48px 0px 81px;
+        }
+
+        @include mobile {
+            display: grid;
+            align-items: center;
+            padding: 48px 0px 81px;
+        }
     }
        
     &__item {
@@ -11,6 +24,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include tablet {
+            padding-bottom: 48px;
+            width: 360px;
+        }
+
+        @include mobile {
+            padding-bottom: 48px;
+            width: 360px;
+        }
     }
     
     &__img {
@@ -35,6 +58,5 @@
         opacity: .5;
         font-weight: 400;
     }
-    
 }
 
