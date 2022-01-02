@@ -96,6 +96,8 @@ body {
   .header__buttom-image:focus {
     background: #F8F8F8;
     cursor: pointer; }
+  .header__menu {
+    display: none; }
   .header__basket-button {
     position: relative; }
     .header__basket-button {
