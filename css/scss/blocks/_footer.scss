@@ -178,6 +178,7 @@
             justify-content: space-between;
 
             @include mobile {
+                margin-bottom: 40px;
                 padding: 0;
             }
         }

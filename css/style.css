@@ -528,6 +528,7 @@ body {
   justify-content: space-between; }
   @media (max-width: 767px) {
     .footer__copyrights-links {
+      margin-bottom: 40px;
       padding: 0; } }
 .footer__copyrights-item {
   position: relative; }
