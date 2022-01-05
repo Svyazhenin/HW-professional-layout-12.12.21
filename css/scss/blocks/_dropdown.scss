@@ -1,0 +1,20 @@
+.dropdown-menu {
+  position: absolute;
+  inset: 75px auto auto auto !important;
+  right:  0 !important;
+  transform: none !important;
+  height: 764px;
+  display: none;
+  min-width: 232px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+
+

@@ -10,16 +10,17 @@
 }
 
 @mixin subheader {
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 140px;
+    background-color: $reg-light-pink-bkg;
     color: var(--pink-text);
+    font-size: 24px;
+    height: 148px;
+    line-height: 140px;
+    text-transform: uppercase;    
 }
 
-@mixin small-desktop-width {
-    @media (max-width: $tablet-width) {
-        @content;
-    }
+@mixin subheader-bkg {
+    background-color: $reg-light-pink-bkg;
+    height: 148px;
 }
 
 @mixin tablet {
