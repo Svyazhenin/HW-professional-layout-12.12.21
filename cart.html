@@ -99,13 +99,13 @@
         <section class="shopping-cart-title">
             <h1 class="container shopping-cart-title__text">shopping cart</h1>
         </section>
-        <section class="shopping-cart">
-            <ul class="container">
-                <li>
-                    <ul class="shopping-cart__conteiner">
+        <section>
+            <ul class="container shopping-cart">
+                <li class="container shopping-cart__block">
+                    <ul class="shopping-cart__cart-wrap">
                         <li class="shopping-cart__cart">
-                            <img src="img/hopping-cart-prew-img1.jpg" alt="shopping cart image"
-                                class="hopping-cart__cart-img">
+                            <img class="shopping-cart__cart-img" src="img/hopping-cart-prew-img1.jpg"
+                                alt="shopping cart image">
                             <div>
                                 <h2 class="shopping-cart__cart-title">mango people <span
                                         class="shopping-cart__cart-title_transfer-new-line">t-shirt</span>
@@ -128,7 +128,7 @@
                         </li>
                         <li class="shopping-cart__cart">
                             <img src="img/hopping-cart-prew-img2.jpg" alt="shopping cart image"
-                                class="hopping-cart__cart-img">
+                                class="shopping-cart__cart-img">
                             <div>
                                 <h2 class="shopping-cart__cart-title">mango people
                                     <span class="shopping-cart__cart-title_transfer-new-line">t-shirt</span>
@@ -157,7 +157,42 @@
                         </ul>
                     </ul>
                 </li>
-                <li></li>
+                <li class="shopping-cart-form">
+                    <h3 class="shopping-cart-form__form-title">shipping adress</h3>
+                    <div class="shopping-cart-form__block">
+                        <form action="">
+                            <fieldset>
+                                <label class="shopping-cart__form-label" for="">
+                                    <input class="shopping-cart-form__form-input" placeholder="Bangladesh required"
+                                        type="text">
+                                    <span class="visually-hidden">State</span>
+                                </label>
+                                <label class="shopping-cart-form__form-label" for="">
+                                    <input class="shopping-cart-form__form-input" placeholder="Bangladesh" type="text"
+                                        required>
+                                    <span class="visually-hidden">State</span>
+                                </label>
+                                <label class="shopping-cart-form__form-label" for="">
+                                    <input class="shopping-cart-form__form-input" placeholder="Postcode / Zip"
+                                        type="text" required>
+                                    <span class="visually-hidden">Postcode</span>
+                                </label>
+                            </fieldset>
+                            <button class="shopping-cart-form__form-button">get a quote</button>
+                        </form>
+                        <div>
+                            <div class="shopping-cart-form__wrap">
+                                <p class="shopping-cart-form__sub-total">sub total <span
+                                        class="shopping-cart-form__sub-total-summ">$900</span></p>
+                                <p class="shopping-cart-form__grand-total">grand total<span
+                                        class="shopping-cart-form__grand-total-summ">$900</span></p>
+                                <hr class="shopping-cart-form__line">
+                                <button class="shopping-cart-form__button-proceed" type="button">proceed to
+                                    checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </section>
     </main>
@@ -185,7 +220,6 @@
                                 <button class="footer__subscribe-button" type="button">Subscribe
                                 </button>
                             </form>
-
                         </li>
                     </ul>
                 </ul>
