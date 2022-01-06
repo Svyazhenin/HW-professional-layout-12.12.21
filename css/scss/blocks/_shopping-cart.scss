@@ -8,7 +8,10 @@
 
 .shopping-cart {
     display: flex;
+   
+   @include tablet {
     align-items: center;
+   }
 
     @include tablet {
         display: flex;
@@ -192,7 +195,7 @@
     }
 
     &-form {
-        margin: 113px;
+        margin-top: 113px;
         width: 362px;
 
         @include tablet {
