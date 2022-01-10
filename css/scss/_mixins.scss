@@ -10,16 +10,17 @@
 }
 
 @mixin subheader {
-    text-transform: uppercase;
+    background-color: $reg-light-pink-bkg;
+    color: $pink-text;
     font-size: 24px;
+    height: 148px;
     line-height: 140px;
-    color: var(--pink-text);
+    text-transform: uppercase;    
 }
 
-@mixin small-desktop-width {
-    @media (max-width: $tablet-width) {
-        @content;
-    }
+@mixin subheader-bkg {
+    background-color: $reg-light-pink-bkg;
+    height: 148px;
 }
 
 @mixin tablet {
@@ -32,4 +33,20 @@
     @media (max-width: $mobile-width) {
         @content;
     }   
+}
+
+@mixin arrow-bkg {
+    background: $arrow-bkg;
+    height: 47px;
+    position: relative;
+    width: 47px;
+}
+
+@mixin arrow-config {
+    color: $pink-bkg;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }

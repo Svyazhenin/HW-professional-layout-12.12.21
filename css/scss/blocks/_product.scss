@@ -1,0 +1,111 @@
+.product-subheader {
+    @include subheader-bkg;
+
+    &__text {
+       @include subheader;
+    }
+}
+
+.product-description {
+    align-items: center;
+    background-color: $white-text;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 601px;
+    margin-bottom: 129px;
+    outline: 1px solid #EAEAEA;
+    padding: 65px;
+    position: relative;
+    top: -70px;
+
+    &__collection-title {
+        color: $pink-bkg;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 27px;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    &__collection-title::after {
+        background-color: $pink-bkg;
+        background: $pink-text;
+        bottom: -12px;
+        content: "";
+        height: 3px;
+        left:50%;
+        position: absolute;
+        transform:translate(-50%, -50%);
+        width: 63px;
+    }
+
+    &__moschino-title {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 48px;
+        text-transform: uppercase;
+    }
+
+    &__paragraf {
+        font-weight: 300;
+        font-size: 14px;
+        height: 51px;
+        line-height: 17px;
+        margin-bottom: 32px;
+        text-align: center;
+        width: 555px;
+    }
+
+    &__price {
+        color: $pink-text;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    &__menu-list {
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        margin-bottom: 49px;
+        width: 555px;
+    }
+
+    &__button {
+        background-color: transparent;
+        box-sizing: border-box;
+        border: none;
+        color: $pink-text;
+        height: 47px;
+        outline: 1px solid $pink-bkg;
+        position: relative;
+        width: 211px;
+    }
+
+    &__button:hover {
+         background-color: $pink-bkg;
+         color: $white-text;
+     }
+
+    &__button-img {
+        fill: $pink-bkg;
+        left: 15px;
+        position: absolute;
+    }
+
+    &__button-img:hover {
+        fill: $white-bkg;
+    }
+
+    &__button:hover+&__button-img::after {
+        content: "";
+        fill: $white-bkg;
+        left: 15px;
+        position: absolute;
+    }
+
+}

@@ -1,7 +1,7 @@
 .header {
     background-color: $black-bkg;  
 
-    &_nav-button {
+    &__nav-button {
         display: flex;
         justify-content: space-between;
         min-height: 75px;
@@ -36,10 +36,44 @@
         cursor: pointer;
     }
     
-    &__menu {
-        display: none;
+    &__menu-title {
+        color: $black-text;
+        line-height: 17px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 20px 0px 0px 33px;
+        text-transform: uppercase;
+        
+        
+    }
+
+    &__menu-subtitle {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $pink-text;
+        padding: 20px 0px 0px 33px;
     }
     
+    &__menu-list-item {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+       
+        padding: 11px 0px 0px 54px;
+        text-decoration: none;
+    }
+    &__menu-link:hover {
+        color: $black-text;
+        font-weight: 600;
+    }
+
+    &__menu-link {
+        color: $gray-text;
+        text-decoration: none;
+    }
+  
     &__basket-button{
         position: relative;
     
@@ -63,7 +97,6 @@
 }
 
 @media (max-width: $tablet-width) {
-   
     .header__profile-button {
         display: none;
     }
@@ -74,7 +107,6 @@
 }
 
 @media (max-width: $mobile-width) {
-   
     .header__profile-button {
         display: none;
     }
@@ -82,4 +114,7 @@
     .header__basket-button {
         display: none;
     }
+    
 }
+
+

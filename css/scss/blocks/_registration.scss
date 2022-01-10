@@ -1,14 +1,12 @@
 .registration-title {
-    background-color: $reg-light-pink-bkg;
-    height: 148px;
-}
-
-.registration-title__text {
-    @include subheader;
+    @include subheader-bkg;
+   
+    &-title__text {
+        @include subheader;
+    }
 }
 
 .registration-section {
-
     &__list {
         display: flex;
         justify-content: space-between;
