@@ -1,0 +1,27 @@
+.product-slaider-awesome-modification {
+    &__arrow-left {
+    @include arrow-bkg
+    }
+
+    &__arrow-left:hover {
+        background: $reg-text-gray;
+    }
+
+    &__arrow-left::before {
+        content: "\f053";
+    @include arrow-config
+    }
+
+    &__arrow-right {
+        @include arrow-bkg
+    }
+
+    &__arrow-right:hover {
+        background: $reg-text-gray;
+    }
+
+    &__arrow-right::before {
+        content: "\f054";
+    @include arrow-config
+    }
+}

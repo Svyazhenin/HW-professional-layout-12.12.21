@@ -34,3 +34,19 @@
         @content;
     }   
 }
+
+@mixin arrow-bkg {
+    background: $arrow-bkg;
+    height: 47px;
+    position: relative;
+    width: 47px;
+}
+
+@mixin arrow-config {
+    color: $pink-bkg;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}

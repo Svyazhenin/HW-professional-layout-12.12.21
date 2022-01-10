@@ -1002,4 +1002,126 @@ body {
     .shopping-cart-form__button-proceed:hover {
       opacity: 0.7; }
 
+.product-subheader {
+  background-color: #F8F3F4;
+  height: 148px; }
+  .product-subheader__text {
+    background-color: #F8F3F4;
+    color: #F16D7F;
+    font-size: 24px;
+    height: 148px;
+    line-height: 140px;
+    text-transform: uppercase; }
+
+.product-description {
+  align-items: center;
+  background-color: #FBFBFB;
+  box-sizing: border-box;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 601px;
+  margin-bottom: 129px;
+  outline: 1px solid #EAEAEA;
+  padding: 65px;
+  position: relative;
+  top: -70px; }
+  .product-description__collection-title {
+    color: #F16D7F;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 27px;
+    position: relative;
+    text-transform: uppercase; }
+  .product-description__collection-title::after {
+    background-color: #F16D7F;
+    background: #F16D7F;
+    bottom: -12px;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 63px; }
+  .product-description__moschino-title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 48px;
+    text-transform: uppercase; }
+  .product-description__paragraf {
+    font-weight: 300;
+    font-size: 14px;
+    height: 51px;
+    line-height: 17px;
+    margin-bottom: 32px;
+    text-align: center;
+    width: 555px; }
+  .product-description__price {
+    color: #F16D7F;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px; }
+  .product-description__menu-list {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-bottom: 49px;
+    width: 555px; }
+  .product-description__button {
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    color: #F16D7F;
+    height: 47px;
+    outline: 1px solid #F16D7F;
+    position: relative;
+    width: 211px; }
+  .product-description__button:hover {
+    background-color: #F16D7F;
+    color: #FBFBFB; }
+  .product-description__button-img {
+    fill: #F16D7F;
+    left: 15px;
+    position: absolute; }
+  .product-description__button-img:hover {
+    fill: #FBFBFB; }
+  .product-description__button:hover + .product-description__button-img::after {
+    content: "";
+    fill: #FBFBFB;
+    left: 15px;
+    position: absolute; }
+
+.product-slaider-awesome-modification__arrow-left {
+  background: #D8D8D8;
+  height: 47px;
+  position: relative;
+  width: 47px; }
+.product-slaider-awesome-modification__arrow-left:hover {
+  background: #B1B1B1; }
+.product-slaider-awesome-modification__arrow-left::before {
+  content: "\f053";
+  color: #F16D7F;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+.product-slaider-awesome-modification__arrow-right {
+  background: #D8D8D8;
+  height: 47px;
+  position: relative;
+  width: 47px; }
+.product-slaider-awesome-modification__arrow-right:hover {
+  background: #B1B1B1; }
+.product-slaider-awesome-modification__arrow-right::before {
+  content: "\f054";
+  color: #F16D7F;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 /*# sourceMappingURL=style.css.map */
