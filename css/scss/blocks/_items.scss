@@ -36,6 +36,12 @@
             margin-right: 16px;
         }
 
+        &_display-none {
+            @include tablet {
+                display: none;
+            }
+        }
+
         &-img {
             padding: 0px 0px 25px 0px;  
         }
@@ -66,7 +72,7 @@
             left: 50%;
             line-height: 17px;
             position: absolute;
-            padding: 14px 15px 12px 50px;
+            padding: 13px 15px 11px 50px;
             top: 50%;  
             transform: translate(-50%, -50%);
             width: 138px;
