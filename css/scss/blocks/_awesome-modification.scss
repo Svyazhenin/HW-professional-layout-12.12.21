@@ -1,6 +1,8 @@
 .product-slaider-awesome-modification {
     &__arrow-left {
-    @include arrow-bkg
+    @include arrow-bkg;
+    position: absolute;
+    left: 0;
     }
 
     &__arrow-left:hover {
@@ -13,7 +15,9 @@
     }
 
     &__arrow-right {
-        @include arrow-bkg
+        @include arrow-bkg;
+        position: absolute;
+        right: 0;        
     }
 
     &__arrow-right:hover {
